@@ -13,6 +13,7 @@ body {
   z-index: 200;
   border-radius: 50%;
   outline: none!important;
+  transition: all .5s;
 }
 .line1,
 .line2,
@@ -21,6 +22,7 @@ body {
   height: 2px;
   background: #eee;
   margin: 5px;
+  transition: all .5s;
 }
 .bg-cover {
   background: rgba(35,37,40,.98);
@@ -31,15 +33,24 @@ body {
   right: 35px;
   z-index: 100;
   border-radius: 50%;
+  transition: all .5s;
 }
 .change .line1 {
   transform: rotate(-405deg) translate(-5px, 5px);
+  background: #777;
 }
 .change .line2 {
   opacity: 0;
 }
 .change .line3 {
   transform: rotate(405deg) translate(-5px, -5px);
+  background: #777;
+}
+.change .hamburger-menu {
+  background: #eef0eb;
+}
+.change .bg-cover {
+  transform: scale(250);
 }
 
 /* Header */
